@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="webová stránka bakalářské práce">
+    <meta name="author" content="Antonín Skácel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webová stránka bakalářské práce | Antonín Skácel</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styl.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigace -->
+    <nav class="bg-dark sticky-top py-2">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+    
+    <a class="text-white text-decoration-none fs-5 fw-bold mb-2 mb-md-0" href="#">
+      BP | Skácel
+    </a>
+
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link text-white px-2" href="#anotace">Anotace</a></li>
+      <li class="nav-item"><a class="nav-link text-white px-2" href="#cile">Cíle práce</a></li>
+      <li class="nav-item"><a class="nav-link text-white px-2" href="#metody">Metody</a></li>
+      <li class="nav-item"><a class="nav-link text-white px-2" href="#vysledky">Výsledky</a></li>
+      <li class="nav-item"><a class="nav-link text-white px-2" href="#zaver">Závěr</a></li>
+      <li class="nav-item"><a class="nav-link text-white px-2 fw-bold" href="./cesium/cesiumlihniste.html">3D Aplikace</a></li>
+    </ul>
+    
+  </div>
+</nav>
+
+    <!--header-->
+    <header id="header" class="py-5">
+        <div class="container">
+            <h1>ZPRACOVÁNÍ A PREZENTACE LASEROVÝCH DAT PRO POTŘEBY MONITORINGU KOMÁŘÍCH LÍHNIŠŤ</h1>
+            <h2 class="mt-4 h3">Processing and Visualization of LiDAR Data for Monitoring Mosquito Breeding sites</h2>
+            <h2 class="mt-4">Bakalářská práce | Bachelor Thesis</h2>
+            <p class="mt-4"><strong>Autor:</strong> Antonín Skácel | <strong>Vedoucí práce:</strong> RNDr. Jakub Miřijovský, Ph.D. | KGI UPOL | Olomouc <strong>2026</strong></p>
+        </div>
+    </header>
+
+    <!--Hlavní obsah-->
+    <main class="container bg-light px-md-5 py-5 rounded-4 shadow-sm">
+        <!--anotace a cíle práce-->
+        <section class="row mb-5 align-items-start">
+            <!--anotace a přepínač jazyků-->
+            <div class="col-md-6">
+
+                <div id="anotace" class="mb-5 position-relative">
+    
+                <input type="checkbox" id="langToggle" class="d-none">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="mb-0">
+                        <span class="title-cz">Anotace</span>
+                        <span class="title-en">Abstract</span>
+                    </h2>
+                    
+                    <label for="langToggle" class="btn btn-outline-secondary btn-sm lang-btn cursor-pointer"></label>
+                </div>
+
+                <div class="text-cz">
+                    <p>V rámci této bakalářské práce byly stanoveny dva hlavní směry výzkumu.<br>
+                        <br>První se zaměřuje na zpracování bodových mračen získaných technologií LiDAR v rámci leteckého skenování. Zpracování obnášelo vytvoření replikovatelného pracovního postupu pro čištění a filtraci bodových mračen s cílem selektivního výběru bodů reprezentujících terén. Tyto body byly následně rasterizovány pro vytvoření spojitého digitálního modelu terénu s velkým prostorovým rozlišením, a to za účelem identifikace potenciálních komářích líhnišť.
+                        <br><br>Druhý směr výzkumu byl zaměřen na nástin prezentace bodových dat v online prostředí, v rámci, kterého byly definovány specifické požadavky publikovaných dat pro potřeby monitoringu komářích líhnišť. Byly porovnány možnosti proprietárních i otevřených webových řešení jako ArcGIS Online, Three.js, Potree, a Cesium. Po zvolení nejvhodnějšího z porovnávaných řešení byla provedena vzorová publikace zpracovaných dat s vyznačenými potenciálními komářími líhništi.
+                    </p>
+                </div>
+
+                <div class="text-en">
+                    <p>This bachelor's thesis identified two main areas of research.<br>
+                        <br>The first focuses on the processing of point clouds acquired using LiDAR technology during aerial scanning. The processing involved creating a reproducible workflow for cleaning and filtering point clouds with the aim of selectively choosing points representing the terrain. These points were subsequently rasterized to create a continuous digital terrain model with high spatial resolution, for the purpose of identifying potential mosquito breeding sites.
+                        <br><br>The second research direction focused on outlining the presentation of point data in an online environment, within which specific requirements for published data were defined for the needs of monitoring mosquito breeding sites. The capabilities of both proprietary and open-source web solutions, such as ArcGIS Online, Three.js, Potree, and Cesium, were compared. After selecting the most suitable solution from those compared, a sample publication of the processed data was created, highlighting potential mosquito breeding sites.
+                    </p>
+                </div>
+
+            </div>
+                
+                <div id="cile" class="mb-6"> <h2>Cíle práce</h2>
+                    <p>Cílem bakalářské práce bylo <strong>zpracování a návrh prezentace laserových dat </strong>pro potřeby monitoringu komářích líhnišť. Zpracováno bylo několik datových sad s cílem získat DMR (digitální model reliéfu) s vyznačenými komářími líhništi. Jedním z hlavních cílů byla publikace zpracovaných dat v online internetovém prostředí. Dílčími cíli, kterými se práce zabývala jsou:</p>
+                    <ul>
+                        <li><strong>filtrace a čištění laserových dat</strong>
+                            <!--<p>V rámci tohoto dílčího cíle bylo nutné vytvořit replikovatelný postup zpracování bodových mračen tak, aby výstupem byly pouze body reprezentující povrch. Bylo nutné nutné zvolit 
+                                a odůvodnit výběr metod a nástrojů dostupných v proprietárních SW (software) 3Dsurvey, ArcGIS Pro a otevřeném SW CloudCompare.</p>-->
+                        </li>
+                        <li><strong>tvorba DMR</strong>
+                            <!--<p>V rámci tohoto dílčího cíle je třeba z klasifikovaných laserových dat vytvořit digitální model reliéfu (DMR) s vysokým prostorovým rozlišením. Použitá metody tvorby DMR musí být popsána a odůvodněna, její výsledek bude porovnán s poskytnutým MOSPREMA DEM.</p>-->
+                        </li>
+                        <li><strong>identifikace komářích líhnišť</strong>
+                            <!--<p>V rámci tohoto dílčího cíle je třeba identifikovat a vyznačit komáří líhniště na základě zpracovaných laserových dat.</p>-->
+                        </li>
+                        <li><strong>nástin možností online prezentace 3D modelů</strong>
+                            <!--<p>V rámci tohoto dílčího cíle budou stanoveny požadavky na publikování 3D prostorových dat pro potřeby monitoringu komářích líhnišť v online internetovém prostředí. Porovnány budou nejvhodnější proprietární a otevřená řešení zvolená v rámci rešerše.</p>-->
+                        </li>
+                        <li><strong>online publikace 3D modelů</strong>
+                            <!--<p>V rámci tohoto dílčího cíle bude provedena samotná publikace 3D prostorových dat, a to na vybraném řešení a v souladu s požadavky stanovenými v předchozím kroku.</p>-->
+                        </li>
+                    </ul>
+                    <p>Výsledky práce umožní využít vytvořený pracovní postup pro replikovatelnou tvorbu digitálních modelů o velkém prostorovém rozlišení, a to pro potřeby identifikace potenciálních komářích líhnišť. Dále také práce slouží jako podklad k výběru řešení pro publikování 3D dat v online internetovém prostředí.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <h2 class="pb-3">Postup zpracování</h2>
+                <img src="./img/flowchart.webp" alt="postup zpracování" class="img-fluid">
+            </div>
+        </section>
+        <hr>
+        <!--metody-->
+        <section id="metody" class="mb-5">
+            <h2>Metody a materiály</h2>
+            <details class="mb-3 border rounded-3 shadow-sm" open>
+                <summary class="bg-secondary text-white px-3 py-2 rounded-top cursor-pointer"><h3>Klíčové metody</h3></summary>
+                <div class="p-3">
+                    <ul>
+                        <li><b>Filtrace bodového mračna: </b>aplikace algoritmů za účelem oddělení bodů reprezentujících terén od zbytku mračna.</li>
+                        <li><b>Čištění laserových dat: </b>zpřesnění klasifikace automatickým odfiltrováním bodů šumu a zbytkových nadzemních bodů.</li>
+                        <li><b>Manuální segmentace: </b>proce ručního čištění bodového mračna za účelem odstranění zbylých nežádoucích bodů.</li>
+                        <li><b>Rasterizace: </b>proces převodu hodnot bodového mračna na pravidelnou mřížku.</li>
+                        <li><b>Interpolace: </b>proces odhadu hodnot v místě na základě hodnot okolních bodů.</li>
+                        <li><b>Komparace: </b>proces porovnávání různých datových sad za účelem identifikace rozdílů a podobností.</li>
+                        <li><b>F1 skóre: </b>metrika podobnosti mezi vygenerovanými a skutečnými výsledky. Jedná se o harmonický průměr přesnosti a úplnosti.</li>
+                        <li><b>LoD: </b>Technika umožňující měnit úroveň podrobnosti 3D modelu v závislosti na vzdálenosti od kamery.</li>
+                        <li><b>Oktálový strom: </b>Stromová datová struktura pro efektivní ukládání a vyhledávání 3D dat.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="mb-3 border rounded-3 shadow-sm">
+                <summary class="bg-secondary text-white px-3 py-2 rounded-top cursor-pointer"><h3>Klíčové nástroje</h3></summary>
+                <div class="p-3">
+                    <ul>
+                        <li><b>Filtrace laserových dat: </b>Cloth Simulation Filter (CSF) v SW <em>CloudCompare</em> a poloautomatická klasifikace bodového mračna v SW <em>3DSurvey</em></li>
+                        <li><b>Čištění laserových dat: </b>SOR a Noise filtry, CEA Virtual Broom v SW <em>CloudCompare</em> a nástroje pro manuální segmentaci bodového mračna v SW <em>3DSurvey</em></li>
+                        <li><b>Tvorba DMR: </b>nástroj LAS Dataset To Raster v SW <em>ArcGIS Pro</em></li>
+                        <li><b>Identifikace potenciálních komářích líhnišť: </b>Locate Depressions v SW <em>ArcGIS Pro</em></li>
+                        <li><b>Online prezentace 3D modelů: </b> platforma <em>Cesium</em> a WebGL <em>Potree</em></li>
+                    </ul>
+                </div>
+            </details>
+            <details class="mb-3 border rounded-3 shadow-sm">
+                <summary class="bg-secondary text-white px-3 py-2 rounded-top cursor-pointer"><h3>Použité programy</h3></summary>
+                <div class="p-3">
+                    <ul>
+                        <li><b>CloudComapre: </b>Zpracování laserových dat</li>
+                        <li><b>3DSurvey: </b>Zpracování laserových dat</li>
+                        <li><b>ArcGIS Pro: </b>Tvorba DMR, identifikace terénních depresí a vizualizace</li>
+                        <li><b>Cesium ion: </b>Optimalizace, uložení a prezentace dat</li>
+                        <li><b>CesiumJS: </b>Vizualizace 3D modelů v online prostředí</li>
+                        <li><b>Potree: </b>Vizualizace masivního bodového mračna</li>
+                        <li><b>PotreeConverter: </b> Optimalizace masivního bodového mračna</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="mb-3 border rounded-3 shadow-sm">
+                <summary class="bg-secondary text-white px-3 py-2 rounded-top cursor-pointer"><h3>Použitá data</h3></summary>
+                <div class="p-3">
+                    <ul>
+                        <li><b>MOSPREMA LiDAR: </b>výsledky leteckého skenování CHKO Litovelské Pomoraví ve formátu LAZ. Použita pro testování postupu zpracování zájmových oblasti L1 a L2.</li>
+                        <li><b>Soutok LiDAR: </b>výsledky leteckého skenování části CHKO Soutok ve formátu LAZ. Použita pro testování hromadného zpracování zájmové oblasti S1 v rámci případové studie části CHKO Soutok - Kančí obory.</li>
+                        <li><b>MOSPREMA DEM: </b>digitální model terénu vzniklý z MOSPREMA LiDAR dat. Použit ke komparaci s vytvořeným DMR.</li>
+                        <li><b>ArcČR: </b>vektorová databáze obsahující administrativní datové vrstvy. V rámci práce využita pro tvorbu mapových vizualizací.</li>
+                        <li><b>HY_P: </b>vektorová databáze z INSPIRE tématu VODSTVO, použitá pro filtraci identifikovaných bezodtokých oblastí.</li>
+                        <li><b>VZCHU: </b>vektorová vrstva velkopločných zvláštně chráněných území, poskytovaná AOPK ČR.</li>
+                        <li><b>Klad listů SM5: </b>vektorová síť mřížka listů Státní mapy 1 : 5 000. Použita pro rozčlenění zájmové oblasti S1</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+        <hr>
+        <section>
+            <h2 id="vysledky" class=" h3 mt-4">Výsledky</h2>
+            <p>Stežejním výsledkem práce je navržený postup zpracování laserových dat, popsán v kapitole 4.4. Proces zahrnuje předzpracování (spojení překryvných dat, oříznutí či rozdlaždicování bodových mračen), pro které se nejvíce osvědčily nástroje dostupné v <em>ArcGIS Pro</em>.
+            Samotná filtrace využívá hierarchickou iteraci CSF filtru, s následným zlepšením klasifikace pomocí použití SOR a Noise filtrů a manuální segmentace, asistované nástrojem CEA Virutal Broom.
+            Alespoň částečné automatizace procesu bylo dosaženo vytvořením dávkového souboru <em>CSF_iteration</em>, umožňujícího hromadnou filtraci několika bodových mračen.<br>
+            <br></p> 
+            
+            <figure class="figure text-center d-block">
+             <img src="./img/zpracovani_mracna.webp" alt="zpracování mračna" class="figure-img img-fluid d-block mx-auto">
+             <figcaption class="figure-caption text-center">Diagram postupu zpracování bodového mračna.</figcaption>
+            </figure>
+            <p><br>Použitelnost navrženého postupu byla testována porovnáním DMR vytvořeného ze zpracovaných zájmových oblastí L1 (45 ha) a L2 (125 ha) s MOSPREMA DEM. Použití nástroje LAS Dataset To Raster s parametrem Binning average a interpolací prázdných buněk metodou přirozeného sousedství přinesl plošeně nejmenší absolutní odchylku hodnot. Tímto srovnáním bylo také zjištěno, že navržený postup nedokonale odstraňuje báze kmenů a ležící mrtvé dřevo. Tato odchylka se ovšem většinově nepřesahuje 25 cm.
+            Na základě testování schopnosti identifikace bezodtokých oblastí bylo zjištěno, že použití nástroje LAS Dataset To Raster s parametrem Binning minimum a interpolací prázdných buněk metodou přirozeného sousedství dokázal v zájmových oblastech L1 a L2 dosáhnout <strong>93% shody</strong> s oblastmi identifikovanými z MOSPRERMA DEM (určeno na základě F1 skóre, hodnotící nastalý překryv mezi depresemi metrikami přesnosti a úplnosti). Pro tuto identifikaci bylo požito nástroje Locate Depressions, se stanovenými parametry potenciálního líhniště na minimální hloubku <strong>5 cm</strong> a minimální plochu <strong>100 m²</strong>.
+            Takto otestovaný postup byl aplikován v rámci případové studie na zájmovou oblast S1 (500 ha), kterou byla Kančí obora, tedy část CHKO Soutok severně od města Břeclavi. kde bylo identifikováno <strong>410 potenciálních komářích líhnišť</strong>.</p>
+
+                <div class="row g-4 mb-5">
+                    
+                    <div class="col-md-6">
+                        <figure class="figure mb-0">
+                            <img src="./img/Ground_Points_closeup.webp" class="figure-img img-fluid rounded shadow-sm" alt="Srovanni depresi L1">
+                            <figcaption class="figure-caption text-center mt-2">
+                                Náhled na <em>ground</em> body klasifikované navrženým postupem zpracování.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6">
+                        <figure class="figure mb-0">
+                            <img src="./img/L1Deprese_label.webp" class="figure-img img-fluid rounded shadow-sm" alt="Srovanni depresi L1">
+                            <figcaption class="figure-caption text-center mt-2">
+                                Srovnání identifikovaných depresí z DMR a MOSPREMA DEM v zájmové oblasti L1
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            <p>V rámci online prezentace 3D dat a zjištěných poznatků byly stanoveny obecné a specifické požadavky pro interaktivní vizualizaci potenciálních komářích líhnišť. Na základě těchto poznatků bylo provedeno srovnání proprietárních a otevřených řešení pro online prezentaci 3D dat, z nichž nejvhodnější se ukázala být platforma <a href="https://cesium.com" class="text-decoration-none"><em>Cesium</em></a>. V rámci tohoto řešení bylo použito cloudového uložiště Cesium ion pro optimalizaci a správu zpracovaných dat, a knihovny <em>CesiumJS</em> pro vytvoření interaktivní 3D vizualizace, zobrazující vygenerovaný terén ve formě meshe, na okrajích spojitého s Cesium Global Terrain, texturovaný ortofotomapou a volitelně i stínovaným reliéfem. Nadzemní objekty jsou zde vyjádřeny pomocí bodového mračna obsahujícího <em>Off-Ground body</em>. Terénní deprese jsou zde vyjádřeny jak 3D modely, znázorňující identifikované oblasti v "zatopeném" stavu. při výběru deprese se uživateli zobrazí pop-up okno s relevantními atributy.</p>
+
+                <div class="table-responsive shadow-sm rounded-3 border mb-2">
+                    <table class="table table-hover table-bordered align-middle text-center mb-0">
+                        <caption class="table-caption text-center mb-0 mt-2">
+                            <strong>Tabulka 1:</strong> Srovnání proprietárních a otevřených řešení pro online prezentaci 3D dat.
+                        </caption>
+                        <thead class="table-secondary">
+                            <tr>
+                                <th rowspan="2" class="align-middle">Platforma</th>
+                                <th colspan="3">Technologické a ekonomické aspekty</th>
+                                <th colspan="4">Subjektivní hodnocení náročnosti</th>
+                            </tr>
+                            <tr>
+                                <th class="align-middle">Licence</th>
+                                <th class="align-middle">Cena</th>
+                                <th class="align-middle">Uložení datových sad</th>
+                                <th class="align-middle">Zpracování</th>
+                                <th class="align-middle">Publikace</th>
+                                <th class="align-middle">Zobrazení mapového podkladu</th>
+                                <th class="align-middle">Kombinace datových formátů</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Potree</th>
+                                <td>open-source</td>
+                                <td>zdarma</td>
+                                <td>self-hosted</td>
+                                <td>střední</td>
+                                <td>střední</td>
+                                <td>střední</td>
+                                <td>vysoká</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row" class="text-start">Babylon.js</th>
+                                <td>open-source</td>
+                                <td>zdarma</td>
+                                <td>self-hosted</td>
+                                <td>vysoká</td>
+                                <td>střední</td>
+                                <td>vysoká</td>
+                                <td>vysoká</td>
+                            </tr>
+                            
+                            <tr class="table-success">
+                                <th scope="row" class="text-start">Cesium</th>
+                                <td>open-source /<br>proprietární</td>
+                                <td>Freemium<br><small class="text-muted">(5 GB uložení a 15 GB/měsíc streaming)</small></td>
+                                <td>cloud / self-hosted</td>
+                                <td>nízká</td>
+                                <td>nízká</td>
+                                <td>nízká</td>
+                                <td>nízká</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row" class="text-start">ArcGIS Online</th>
+                                <td>proprietární</td>
+                                <td>placená</td>
+                                <td>cloud</td>
+                                <td>nízká</td>
+                                <td>nízká</td>
+                                <td>nízká</td>
+                                <td>nízká</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+        <hr>
+        <section>
+            <div class="row">
+                <h2 id="zaver" class=" h3 mt-4">Závěr</h2>
+                <div class="col-md-5">
+                    <p>Cílem práce bylo provedení komplexního procesu zpracování a prezentace laserových dat pro potřeby identifikace a montioringu komářích líhnišť. V rámci dílčích cílů byl navržen postup zpracování laserových dat za účelem klasifikace bodů reprezentujících terén.
+                        <br><br>Navržený postup (popsán v kapitole 4.4) zahrnuje předzpracování, hierarchickou iteraci CSF filtru, čištění pomocí SOR a Noise filtrů a manuální segmentaci, asistované nástrojem CEA Virtual Broom. Navržený postup byl testován porovnáním DMR vytvořeného ze zpracovaných zájmových oblastí L1 a L2 s MOSPREMA DEM, přičemž bylo zjištěno, že navržený postup nedokonale odstraňuje báze kmenů a ležící mrtvé dřevo. Testováním použitelnosti vzniklého DMR pro potřeby identifikace terénních depresí, které se po zaplavení mohou stát komářími líhništi, bylo ovšem zjištěno, že zpracovaných oblastech L1 a L2 dosahují identifikované oblasti 93% shody s sníženinami identifikovanými z MOSPREMA DEM.<br><br>
+                        Postup filtrace, rasterizace a identifikace terénních depresí byl následně aplikován v rámci případové studie na zájmovou oblast S1, kterou byla Kančí obora, tedy oblast o 500 ha, která je součástí CHKO Soutok severně od města Břeclavi. V této oblasti bylo identifikováno 410 potenciálních komářích líhnišť.<br><br>
+                        Vizualizace zpracovaných dat a identifikovaných komářích líhnišť byla realizována pomocí platformy <strong>Cesium</strong>, zvolené na základě srovnání proprietárních a otevřených řešení. Aplikace vznikla jako modelová iteraktivní 3D vizualizace potenciálních komářích líhnišť.  
+                        <br><br>Hlavními přínosy práce jsou replikovatelný postup zpracování laserových dat, částečně automatizovaný dávkovým skriptem <em>CSF_iteration.bat</em> a modelová 3D online vizualizace potenciálních komářích líhnišť. Dalším přínosem je identifiakce potencálních komářích líhnišť v části CHKO Souotk. Poznatky a výstupy práce mohou být využity jako základ pro další rozvoj postupu identifiakce terénních depresí z laserových dat a tvorby webových vizualizací v rámci problematiky monitoringu komářích líhnišť.
+                </div>
+                <div class="col-md-7">
+                    <figure class="figure mb-0">
+                        <img src="./img/Obora_Viz.webp" class="figure-img img-fluid rounded shadow-sm w-100" alt="Deprese obora">
+                        <figcaption class="figure-caption text-center mt-2">
+                            Identifikované potenciální komáří líhniště v zájmové oblasti S1 - Kančí obora
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="bg-light rounded">
+                <h2 class="h3 mt-4 text-center">Přílohy ke stažení</h2>
+                <ul class="list-unstyled">
+                    <li><a href="./docs/CSF_iteration.rar" class="btn btn-outline-primary mb-2 w-100">Skript pro hierarchickou iteraci CSF</a></li>
+                    <li><a href="./docs/BC_SKACEL_15_04.docx" class="btn btn-outline-primary mb-2 w-100">Text práce (PDF)</a></li>
+                    <li><a href="./docs/skacel.pdf" class="btn btn-outline-primary mb-2 w-100">Poster (PDF)</a></li>
+                    <li><a href="./cesium/cesiumlihniste.html" class="btn btn-success w-100">Spustit 3D Aplikaci</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-left py-3 px-4">
+        <p><strong>Kontakt:</strong> <a href="mailto:antonin.skacel04@gmail.com">antonin.skacel04@gmail.com</a></p>
+        <p class="mb-0">&copy; 2026 Antonín Skácel. Katedra geoinformatiky, PřF UPOL.</p>
+    </footer>
+
+</body>
+</html>

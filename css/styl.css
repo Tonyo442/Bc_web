@@ -1,0 +1,53 @@
+/* ˇ^ˇ^˘^  TLAČÍTKO PRO PŘEPÍNÁNÍ JAZYKA ˇ^ˇ^˘^ */
+/* -VÝCHOZÍ STAV- */
+.text-en,.title-en {
+    display: none;
+}
+
+/* Výchozí text na tlačítku */
+.lang-btn::after {
+    content: "English";
+}
+
+
+
+/* -STAV PO KLIKNUTÍ (Zaškrtnutý checkbox)- */
+
+#langToggle:checked ~ .text-cz {display: none;}
+#langToggle:checked ~ div .title-cz {display: none;}
+
+#langToggle:checked ~ .text-en {display: block;}
+#langToggle:checked ~ div .title-en {display: block;}
+
+#langToggle:checked ~ div .lang-btn::after {
+    content: "Čeština";
+}
+
+/* ˇ^ˇ^˘^  POZADÍ HEADERU ˇ^ˇ^˘^ */
+#header {
+    background-image: url('../img/Heightmap.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+
+    position: relative;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Tmavý filtr */
+}
+
+#header h1, #header h2, #header p {
+    position: relative;
+    z-index: 1; /* Posune text nad ten tmavý filtr */
+}

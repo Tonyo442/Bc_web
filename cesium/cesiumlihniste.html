@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="webová aplikace - příloha bakalářské práce">
+    <meta name="author" content="Antonín Skácel">
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.139.1/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.139.1/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="./css/cesiumstyle.css" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <title>Vizualizace potenciálních komářích líhnišť</title>
+  </head>
+  <body>
+    <a href="../index.html" id="HomePage"> ← Zpět na hlavní stránku </a>
+    <div id="header">
+      <h1>Interaktivní 3D vizualizace potenciálních komářích líhnišť</h1>
+      <p>Příloha bakalářské práce | Antonín Skácel</p>
+    </div>
+    
+    <div id="cesiumContainer"></div>
+
+    <div id="vrstvyMenu">
+      <h2>Vrstvy</h2>
+
+      <div class="tlacitko">
+        <input type="checkbox" id="toggleMracno" checked>
+        <label for="toggleMracno" style="cursor: pointer;">Bodové mračno</label>
+      </div>
+    
+
+      <div class="tlacitko">
+        <input type="checkbox" id="toggleDeprese" checked>
+        <label for="toggleDeprese" style="cursor: pointer;">zaplavené deprese</label>
+      </div>
+
+      <div class="tlacitko">
+        <input type="checkbox" id="toggleHillshade">
+        <label for="toggleHillshade" style="cursor: pointer;">stínovaný reliéf</label>
+    </div>
+  </div>
+
+  <div>
+    <script src="./js/index.js" type="module"></script>
+  </div>
+  </body>
+</html>
