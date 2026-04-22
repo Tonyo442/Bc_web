@@ -60,7 +60,17 @@ async function NactiData() {
         //bodove mracno
         const mracno = await Cesium.Cesium3DTileset.fromIonAssetId(4504632);
         viewer.scene.primitives.add(mracno);
-        mracno.pointCloudShading.attenuation = true; 
+        
+        mracno.castShadows = false;
+        mracno.receiveShadows = false;
+
+        mracno.pointCloudShading.attenuation = true;
+        mracno.pointCloudShading.geometricErrorScale = 0.5; // snizeni geometricke chyby pro lepsi kvalitu bodu
+        mracno.pointCloudShading.maximumAttenuation = 3; // max. velikost bodu
+
+        mracno.pointCloudShading.eyeDomeLighting = true;
+        mracno.pointCloudShading.eyeDomeLightingStrength = 1.2; 
+        mracno.pointCloudShading.eyeDomeLightingRadius = 1.0;
 
         //tereni deprese
         const deprese = await Cesium.IonResource.fromAssetId(4607670);
